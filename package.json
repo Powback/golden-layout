@@ -32,14 +32,13 @@
     "lint_es6:autofix": "stylelint src/scss/**/*.scss --fix && eslint src/js_es6 --fix",
     "prestart": "npm-run-all --parallel clean",
     "start": "npm run clean && cross-env STYLES=scss JQUERY=true webpack --progress --env.dev --config webpack.config.dev.babel.js",
-    "start_es6j": "npm run clean && cross-env STYLES=scss ES6=true JQUERY=true webpack --progress --env.dev --config webpack.config.dev.babel.js",
+    "start_es6j": "npm run cleayarn n && cross-env STYLES=scss ES6=true JQUERY=true webpack --progress --env.dev --config webpack.config.dev.babel.js",
     "start_es6z": "npm run clean && cross-env STYLES=scss ES6=true ZEPTO=true webpack --progress --env.dev --config webpack.config.dev.babel.js",
     "test": "cross-env ES6=true JQUERY=true karma start",
     "coverage": "ES6=true JQUERY=true karma start --single-run --no-auto-watch --coverage=true || echo done"
   },
   "dependencies": {
     "imports-loader": "^0.8.0",
-    "jquery": "^3.3.1",
     "zepto": "^1.2.0"
   },
   "devDependencies": {
