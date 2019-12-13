@@ -132,18 +132,16 @@
   },
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "/dist/js",
       "files": [
         "goldenlayout.js",
         "goldenlayout.min.js"
       ]
     },
     {
-      "basePath": "/src/css/",
+      "basePath": "/dist/css/",
       "files": [
-        "goldenlayout.base.css",
-        "goldenlayout-dark-theme.css",
-        "goldenlayout-light-theme.css"
+        "goldenlayout.css"
       ]
     },
     {
