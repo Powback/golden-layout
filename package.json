@@ -1,6 +1,6 @@
 {
   "name": "golden-layout",
-  "version": "1.5.9",
+  "version": "1.5.91",
   "description": "A multi-screen javascript Layout manager \r https://golden-layout.com",
   "keywords": [
     "docker",
@@ -122,11 +122,11 @@
     "format": "global",
     "registry": "jspm",
     "dependencies": {
-      "jquery": "^2.1.0"
+      "zepto": "^1.2.0"
     },
     "shim": {
       "dist/goldenlayout": [
-        "jquery"
+        "zepto"
       ]
     }
   },
