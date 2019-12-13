@@ -14,6 +14,10 @@ lm.items.RowOrColumn = function( isColumn, layoutManager, config, parent ) {
 	this._splitterPosition = null;
 	this._splitterMinPosition = null;
 	this._splitterMaxPosition = null;
+    this.$options = {
+    };
+    this.$refs = {};
+    this._data = {};
 };
 
 lm.utils.extend( lm.items.RowOrColumn, lm.items.AbstractContentItem );

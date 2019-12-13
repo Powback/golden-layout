@@ -6,6 +6,10 @@ lm.items.Root = function( layoutManager, config, containerElement ) {
 	this.childElementContainer = this.element;
 	this._containerElement = containerElement;
 	this._containerElement.append( this.element );
+    this.$options = {
+    };
+    this.$refs = {};
+    this._data = {};
 };
 
 lm.utils.extend( lm.items.Root, lm.items.AbstractContentItem );

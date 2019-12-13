@@ -56,6 +56,10 @@ lm.LayoutManager = function( config, container ) {
 		'stack': lm.items.Stack,
 		'component': lm.items.Component
 	};
+    this.$options = {
+    };
+    this.$refs = {};
+    this._data = {};
 };
 
 /**

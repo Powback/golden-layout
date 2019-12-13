@@ -44,6 +44,10 @@ lm.items.AbstractContentItem = function( layoutManager, config, parent ) {
 	if( config.content ) {
 		this._createContentItems( config );
 	}
+    this.$options = {
+    };
+    this.$refs = {};
+    this._data = {};
 };
 
 lm.utils.copy( lm.items.AbstractContentItem.prototype, {
@@ -104,7 +108,7 @@ lm.utils.copy( lm.items.AbstractContentItem.prototype, {
 		}
 
 		/**
-		 * Call ._$destroy on the content item. 
+		 * Call ._$destroy on the content item.
 		 * Then use 'callDownwards' to destroy any children
 		 */
 		if( keepChild !== true ) {

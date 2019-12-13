@@ -36,6 +36,10 @@ lm.items.Stack = function( layoutManager, config, parent ) {
 	this.element.append( this.childElementContainer );
 	this._setupHeaderPosition();
 	this._$validateClosability();
+    this.$options = {
+    };
+    this.$refs = {};
+    this._data = {};
 };
 
 lm.utils.extend( lm.items.Stack, lm.items.AbstractContentItem );
@@ -89,7 +93,7 @@ lm.utils.copy( lm.items.Stack.prototype, {
 
 			this.setActiveContentItem( initialItem );
 		}
-		this._$validateClosability();		
+		this._$validateClosability();
 		if( this.parent instanceof lm.items.RowOrColumn ) {
 			this.parent._validateDocking();
 		}
