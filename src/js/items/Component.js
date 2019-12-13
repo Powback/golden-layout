@@ -20,6 +20,10 @@ lm.items.Component = function( layoutManager, config, parent ) {
 	this.container = new lm.container.ItemContainer( this.config, this, layoutManager );
 	this.instance = new ComponentConstructor( this.container, componentConfig );
 	this.element = this.container._element;
+    this.$options = {
+    };
+    this.$refs = {};
+    this._data = {};
 };
 
 lm.utils.extend( lm.items.Component, lm.items.AbstractContentItem );
